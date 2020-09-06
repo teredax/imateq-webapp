@@ -100,7 +100,7 @@
           <v-card class="mx-auto" max-width="600px">
             <v-card-title class="page-title">Buscas imprimir un Diseño?</v-card-title>
             <v-card-text>
-              <v-layout row pt-5>
+              <v-layout row wrap pt-5>
                 <v-flex xs12 px-5>
                   <v-text-field
                     label="Nombre"
@@ -198,7 +198,7 @@
         <v-card-title class="headline">Cotiza tu Impresion a {{ shirtQuoteForm.productName }} !</v-card-title>
         <v-card-text>
           <v-form v-model="formIsValid">
-            <v-layout row pt-5>
+            <v-layout row wrap pt-5>
               <v-flex xs12 px-5>
                 <v-text-field
                   :rules="[() => shirtQuoteForm.contactName.length > 0]"
