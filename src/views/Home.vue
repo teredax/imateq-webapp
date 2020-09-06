@@ -38,7 +38,7 @@
           <v-divider horizontal></v-divider>
         </v-flex>
         <v-flex text-center xs12 pl-10 pt-10 class="page-title">
-          Impresiónes a Color
+          Impresiónes a todo Color
           <v-flex xs4 class="mx-auto" pb-10>
             <v-divider horizontal></v-divider>
           </v-flex>
