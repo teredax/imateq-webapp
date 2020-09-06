@@ -195,45 +195,43 @@
     </v-dialog>
     <v-dialog v-model="shirtQuoteDialog" max-width="800">
       <v-card>
-        <v-card-title class="headline">Cotiza tu Impresion a {{ shirtQuoteForm.productName }} !</v-card-title>
+        <v-card-title class="headline">Cotiza tu Impresion a {{ shirtQuoteForm.productName }}</v-card-title>
         <v-card-text>
-          <v-form v-model="formIsValid">
-            <v-layout row wrap pt-5>
-              <v-flex xs12 px-5>
-                <v-text-field
-                  :rules="[() => shirtQuoteForm.contactName.length > 0]"
-                  label="Nombre"
-                  outlined
-                  prepend-inner-icon="mdi-account"
-                />
-              </v-flex>
-              <v-flex xs12 px-5>
-                <v-text-field
-                  :rules="[() => shirtQuoteForm.phone.length > 0]"
-                  label="Telefono"
-                  prepend-inner-icon="mdi-phone"
-                  outlined
-                />
-              </v-flex>
-              <v-flex xs12 px-5>
-                <v-text-field
-                  :rules="[() => shirtQuoteForm.email.length > 0]"
-                  prepend-inner-icon="mdi-email"
-                  label="Correo"
-                  outlined
-                />
-              </v-flex>
-              <v-flex xs12 px-5>
-                <v-text-field
-                  :rules="[() => shirtQuoteForm.message.length > 0]"
-                  label="Describe tu Diseño"
-                  prepend-inner-icon="mdi-message"
-                  outlined
-                  height="100px"
-                />
-              </v-flex>
-            </v-layout>
-          </v-form>
+          <v-layout row wrap pt-5>
+            <v-flex xs12 px-5>
+              <v-text-field
+                :rules="[() => shirtQuoteForm.contactName.length > 0]"
+                label="Nombre"
+                outlined
+                prepend-inner-icon="mdi-account"
+              />
+            </v-flex>
+            <v-flex xs12 px-5>
+              <v-text-field
+                :rules="[() => shirtQuoteForm.phone.length > 0]"
+                label="Telefono"
+                prepend-inner-icon="mdi-phone"
+                outlined
+              />
+            </v-flex>
+            <v-flex xs12 px-5>
+              <v-text-field
+                :rules="[() => shirtQuoteForm.email.length > 0]"
+                prepend-inner-icon="mdi-email"
+                label="Correo"
+                outlined
+              />
+            </v-flex>
+            <v-flex xs12 px-5>
+              <v-text-field
+                :rules="[() => shirtQuoteForm.message.length > 0]"
+                label="Describe tu Diseño"
+                prepend-inner-icon="mdi-message"
+                outlined
+                height="100px"
+              />
+            </v-flex>
+          </v-layout>
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
