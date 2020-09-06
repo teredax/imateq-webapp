@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div ref="WA" class="elfsight-app-28b882e4-f8b5-4b5a-8994-adc90489c91a"></div>
     <v-carousel hide-delimiters :height="windowSize > 2 ? 500 : 250" continuous cycle>
       <v-carousel-item
         v-for="(photo, index) in photos"
@@ -317,6 +318,9 @@ export default {
     }
   },
   mounted () {
+    const foo = document.createElement('script')
+    foo.setAttribute('src', 'https://apps.elfsight.com/p/platform.js')
+    this.$refs.WA.appendChild(foo)
     var handleScroll = (evt) => {
       for (var i = 0; i < this.fadeInElements.length; i++) {
         var elem = this.fadeInElements[i]
